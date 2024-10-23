@@ -1,0 +1,257 @@
+Windows PowerShell
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Попробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)
+
+PS C:\Users\Dasha> Get-Process | Get-Member
+
+
+   TypeName: System.Diagnostics.Process
+
+Name                       MemberType     Definition
+----                       ----------     ----------
+Handles                    AliasProperty  Handles = Handlecount
+Name                       AliasProperty  Name = ProcessName
+NPM                        AliasProperty  NPM = NonpagedSystemMemorySize64
+PM                         AliasProperty  PM = PagedMemorySize64
+SI                         AliasProperty  SI = SessionId
+VM                         AliasProperty  VM = VirtualMemorySize64
+WS                         AliasProperty  WS = WorkingSet64
+Disposed                   Event          System.EventHandler Disposed(System.Object, System.EventArgs)
+ErrorDataReceived          Event          System.Diagnostics.DataReceivedEventHandler ErrorDataReceived(System.Object, System.Diag...
+Exited                     Event          System.EventHandler Exited(System.Object, System.EventArgs)
+OutputDataReceived         Event          System.Diagnostics.DataReceivedEventHandler OutputDataReceived(System.Object, System.Dia...
+BeginErrorReadLine         Method         void BeginErrorReadLine()
+BeginOutputReadLine        Method         void BeginOutputReadLine()
+CancelErrorRead            Method         void CancelErrorRead()
+CancelOutputRead           Method         void CancelOutputRead()
+Close                      Method         void Close()
+CloseMainWindow            Method         bool CloseMainWindow()
+CreateObjRef               Method         System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Dispose                    Method         void Dispose(), void IDisposable.Dispose()
+Equals                     Method         bool Equals(System.Object obj)
+GetHashCode                Method         int GetHashCode()
+GetLifetimeService         Method         System.Object GetLifetimeService()
+GetType                    Method         type GetType()
+InitializeLifetimeService  Method         System.Object InitializeLifetimeService()
+Kill                       Method         void Kill()
+Refresh                    Method         void Refresh()
+Start                      Method         bool Start()
+ToString                   Method         string ToString()
+WaitForExit                Method         bool WaitForExit(int milliseconds), void WaitForExit()
+WaitForInputIdle           Method         bool WaitForInputIdle(int milliseconds), bool WaitForInputIdle()
+__NounName                 NoteProperty   string __NounName=Process
+BasePriority               Property       int BasePriority {get;}
+Container                  Property       System.ComponentModel.IContainer Container {get;}
+EnableRaisingEvents        Property       bool EnableRaisingEvents {get;set;}
+ExitCode                   Property       int ExitCode {get;}
+ExitTime                   Property       datetime ExitTime {get;}
+Handle                     Property       System.IntPtr Handle {get;}
+HandleCount                Property       int HandleCount {get;}
+HasExited                  Property       bool HasExited {get;}
+Id                         Property       int Id {get;}
+MachineName                Property       string MachineName {get;}
+MainModule                 Property       System.Diagnostics.ProcessModule MainModule {get;}
+MainWindowHandle           Property       System.IntPtr MainWindowHandle {get;}
+MainWindowTitle            Property       string MainWindowTitle {get;}
+MaxWorkingSet              Property       System.IntPtr MaxWorkingSet {get;set;}
+MinWorkingSet              Property       System.IntPtr MinWorkingSet {get;set;}
+Modules                    Property       System.Diagnostics.ProcessModuleCollection Modules {get;}
+NonpagedSystemMemorySize   Property       int NonpagedSystemMemorySize {get;}
+NonpagedSystemMemorySize64 Property       long NonpagedSystemMemorySize64 {get;}
+PagedMemorySize            Property       int PagedMemorySize {get;}
+PagedMemorySize64          Property       long PagedMemorySize64 {get;}
+PagedSystemMemorySize      Property       int PagedSystemMemorySize {get;}
+PagedSystemMemorySize64    Property       long PagedSystemMemorySize64 {get;}
+PeakPagedMemorySize        Property       int PeakPagedMemorySize {get;}
+PeakPagedMemorySize64      Property       long PeakPagedMemorySize64 {get;}
+PeakVirtualMemorySize      Property       int PeakVirtualMemorySize {get;}
+PeakVirtualMemorySize64    Property       long PeakVirtualMemorySize64 {get;}
+PeakWorkingSet             Property       int PeakWorkingSet {get;}
+PeakWorkingSet64           Property       long PeakWorkingSet64 {get;}
+PriorityBoostEnabled       Property       bool PriorityBoostEnabled {get;set;}
+PriorityClass              Property       System.Diagnostics.ProcessPriorityClass PriorityClass {get;set;}
+PrivateMemorySize          Property       int PrivateMemorySize {get;}
+PrivateMemorySize64        Property       long PrivateMemorySize64 {get;}
+PrivilegedProcessorTime    Property       timespan PrivilegedProcessorTime {get;}
+ProcessName                Property       string ProcessName {get;}
+ProcessorAffinity          Property       System.IntPtr ProcessorAffinity {get;set;}
+Responding                 Property       bool Responding {get;}
+SafeHandle                 Property       Microsoft.Win32.SafeHandles.SafeProcessHandle SafeHandle {get;}
+SessionId                  Property       int SessionId {get;}
+Site                       Property       System.ComponentModel.ISite Site {get;set;}
+StandardError              Property       System.IO.StreamReader StandardError {get;}
+StandardInput              Property       System.IO.StreamWriter StandardInput {get;}
+StandardOutput             Property       System.IO.StreamReader StandardOutput {get;}
+StartInfo                  Property       System.Diagnostics.ProcessStartInfo StartInfo {get;set;}
+StartTime                  Property       datetime StartTime {get;}
+SynchronizingObject        Property       System.ComponentModel.ISynchronizeInvoke SynchronizingObject {get;set;}
+Threads                    Property       System.Diagnostics.ProcessThreadCollection Threads {get;}
+TotalProcessorTime         Property       timespan TotalProcessorTime {get;}
+UserProcessorTime          Property       timespan UserProcessorTime {get;}
+VirtualMemorySize          Property       int VirtualMemorySize {get;}
+VirtualMemorySize64        Property       long VirtualMemorySize64 {get;}
+WorkingSet                 Property       int WorkingSet {get;}
+WorkingSet64               Property       long WorkingSet64 {get;}
+PSConfiguration            PropertySet    PSConfiguration {Name, Id, PriorityClass, FileVersion}
+PSResources                PropertySet    PSResources {Name, Id, Handlecount, WorkingSet, NonPagedMemorySize, PagedMemorySize, Pri...
+Company                    ScriptProperty System.Object Company {get=$this.Mainmodule.FileVersionInfo.CompanyName;}
+CPU                        ScriptProperty System.Object CPU {get=$this.TotalProcessorTime.TotalSeconds;}
+Description                ScriptProperty System.Object Description {get=$this.Mainmodule.FileVersionInfo.FileDescription;}
+FileVersion                ScriptProperty System.Object FileVersion {get=$this.Mainmodule.FileVersionInfo.FileVersion;}
+Path                       ScriptProperty System.Object Path {get=$this.Mainmodule.FileName;}
+Product                    ScriptProperty System.Object Product {get=$this.Mainmodule.FileVersionInfo.ProductName;}
+ProductVersion             ScriptProperty System.Object ProductVersion {get=$this.Mainmodule.FileVersionInfo.ProductVersion;}
+
+
+PS C:\Users\Dasha> cd C:\Windows
+PS C:\Windows> Get-ChildItem -filter *exe | measure-object -Sum
+measure-object : Объект ввода "bfsvc.exe" не является числовым.
+строка:1 знак:30
++ Get-ChildItem -filter *exe | measure-object -Sum
++                              ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidType: (bfsvc.exe:FileInfo) [Measure-Object], PSInvalidOperationException
+    + FullyQualifiedErrorId : NonNumericInputObject,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+measure-object : Объект ввода "explorer.exe" не является числовым.
+строка:1 знак:30
++ Get-ChildItem -filter *exe | measure-object -Sum
++                              ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidType: (explorer.exe:FileInfo) [Measure-Object], PSInvalidOperationException
+    + FullyQualifiedErrorId : NonNumericInputObject,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+measure-object : Объект ввода "HelpPane.exe" не является числовым.
+строка:1 знак:30
++ Get-ChildItem -filter *exe | measure-object -Sum
++                              ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidType: (HelpPane.exe:FileInfo) [Measure-Object], PSInvalidOperationException
+    + FullyQualifiedErrorId : NonNumericInputObject,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+measure-object : Объект ввода "hh.exe" не является числовым.
+строка:1 знак:30
++ Get-ChildItem -filter *exe | measure-object -Sum
++                              ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidType: (hh.exe:FileInfo) [Measure-Object], PSInvalidOperationException
+    + FullyQualifiedErrorId : NonNumericInputObject,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+measure-object : Объект ввода "notepad.exe" не является числовым.
+строка:1 знак:30
++ Get-ChildItem -filter *exe | measure-object -Sum
++                              ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidType: (notepad.exe:FileInfo) [Measure-Object], PSInvalidOperationException
+    + FullyQualifiedErrorId : NonNumericInputObject,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+measure-object : Объект ввода "py.exe" не является числовым.
+строка:1 знак:30
++ Get-ChildItem -filter *exe | measure-object -Sum
++                              ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidType: (py.exe:FileInfo) [Measure-Object], PSInvalidOperationException
+    + FullyQualifiedErrorId : NonNumericInputObject,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+measure-object : Объект ввода "pyw.exe" не является числовым.
+строка:1 знак:30
++ Get-ChildItem -filter *exe | measure-object -Sum
++                              ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidType: (pyw.exe:FileInfo) [Measure-Object], PSInvalidOperationException
+    + FullyQualifiedErrorId : NonNumericInputObject,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+measure-object : Объект ввода "regedit.exe" не является числовым.
+строка:1 знак:30
++ Get-ChildItem -filter *exe | measure-object -Sum
++                              ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidType: (regedit.exe:FileInfo) [Measure-Object], PSInvalidOperationException
+    + FullyQualifiedErrorId : NonNumericInputObject,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+measure-object : Объект ввода "splwow64.exe" не является числовым.
+строка:1 знак:30
++ Get-ChildItem -filter *exe | measure-object -Sum
++                              ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidType: (splwow64.exe:FileInfo) [Measure-Object], PSInvalidOperationException
+    + FullyQualifiedErrorId : NonNumericInputObject,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+measure-object : Объект ввода "winhlp32.exe" не является числовым.
+строка:1 знак:30
++ Get-ChildItem -filter *exe | measure-object -Sum
++                              ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidType: (winhlp32.exe:FileInfo) [Measure-Object], PSInvalidOperationException
+    + FullyQualifiedErrorId : NonNumericInputObject,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+measure-object : Объект ввода "write.exe" не является числовым.
+строка:1 знак:30
++ Get-ChildItem -filter *exe | measure-object -Sum
++                              ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidType: (write.exe:FileInfo) [Measure-Object], PSInvalidOperationException
+    + FullyQualifiedErrorId : NonNumericInputObject,Microsoft.PowerShell.Commands.MeasureObjectCommand
+
+
+
+Count    : 11
+Average  :
+Sum      :
+Maximum  :
+Minimum  :
+Property :
+
+
+
+PS C:\Windows> Get-ChildItem -filter *exe | Measure-Object -Property length -Minimum -Maximum -Sum -Average
+
+
+Count    : 11
+Average  : 841741,818181818
+Sum      : 9259160
+Maximum  : 5845320
+Minimum  : 11264
+Property : Length
+
+
+
+PS C:\Windows> Get-CimInstance CIM_Processor
+>>
+
+DeviceID Name                                           Caption                               MaxClockSpeed SocketDesignation Manufac
+                                                                                                                              turer
+-------- ----                                           -------                               ------------- ----------------- -------
+CPU0     11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz Intel64 Family 6 Model 167 Stepping 1 2592          U3E1              Genu...
+
+
+PS C:\Windows> $n = 10
+>> 'dir'; 1..$n | foreach {Measure-Command {dir $env:SystemRoot}} | Measure-Object TotalMilliseconds -Max -Min -Average
+>> 'ps';  1..$n | foreach {Measure-Command {ps}} | Measure-Object TotalMilliseconds -Max -Min -Average
+>>
+dir
+
+
+Count    : 10
+Average  : 2,84453
+Sum      :
+Maximum  : 8,8242
+Minimum  : 1,7686
+Property : TotalMilliseconds
+
+ps
+Count    : 10
+Average  : 2,74192
+Sum      :
+Maximum  : 8,6201
+Minimum  : 1,9306
+Property : TotalMilliseconds
+
+
+
+PS C:\Windows> Get-Process | Select-Object Name,@{N='MemoryUsageKB';E={$_.WorkingSet/1KB}},@{N='StartDate';E={$_.StartTime.ToShortDateString()}} | Sort-Object MemoryUsageKB | ConvertTo-Html > C:\Temp\Process.htm
+>> 1
+>>
+out-file : Не удалось найти часть пути "C:\Temp\Process.htm".
+строка:1 знак:1
++ Get-Process | Select-Object Name,@{N='MemoryUsageKB';E={$_.WorkingSet ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [Out-File], DirectoryNotFoundException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+
+1
+PS C:\Windows> Get-Process | Select-Object Name,@{N='MemoryUsageKB';E={$_.WorkingSet/1KB}},@{N='StartDate';E={$_.StartTime.ToShortDateString()}} | Sort-Object MemoryUsageKB | ConvertTo-Html > C:\Users\Dasha\Downloads\Process.htm
+>> 1
+>>
+1
+PS C:\Windows>
