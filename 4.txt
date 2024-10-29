@@ -1,0 +1,12 @@
+PS C:\Windows> Get-ChildItem -filter *exe | measure-object -Sum
+
+Count    : 11
+Average  :
+Sum      :
+Maximum  :
+Minimum  :
+Property :
+
+
+
+PS C:\Windows>

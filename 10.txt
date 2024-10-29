@@ -1,0 +1,24 @@
+PS C:\Users\Dasha> $n = 10
+>> 'dir'; 1..$n | foreach {Measure-Command {dir $env:SystemRoot}} | Measure-Object TotalMilliseconds -Max -Min -Average
+>> 'ps';  1..$n | foreach {Measure-Command {ps}} | Measure-Object TotalMilliseconds -Max -Min -Average
+>> 0
+>>
+dir
+
+
+Count    : 10
+Average  : 3,18097
+Sum      :
+Maximum  : 8,5389
+Minimum  : 1,7796
+Property : TotalMilliseconds
+
+ps
+Count    : 10
+Average  : 3,70684
+Sum      :
+Maximum  : 9,6156
+Minimum  : 1,8224
+Property : TotalMilliseconds
+
+0

@@ -1,0 +1,4 @@
+PS C:\Users\Dasha> $sum = $null
+>> Get-ChildItem -Path $env:SystemRoot -Include *.bmp,*.jpg -Recurse -File -EA SilentlyContinue | %{$sum += $_.Length}
+>> $sum
+83981899
